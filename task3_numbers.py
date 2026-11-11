@@ -9,35 +9,35 @@ import math
 def average(a, b, c):
     """Return the average of three numbers rounded to 2 decimal places.
     average(80, 85, 90) -> 85.0"""
-    return None  # TODO
+    return round((a + b + c) / 3, 2)
 
 
 def to_hours_minutes(total_minutes):
     """Return a tuple (hours, minutes). Use // and %.
     to_hours_minutes(135) -> (2, 15)"""
-    return None  # TODO
+    return (total_minutes // 60, total_minutes % 60)
 
 
 def celsius_to_f(c):
     """Return the Fahrenheit value: c * 9 / 5 + 32.  celsius_to_f(100) -> 212.0"""
-    return None  # TODO
+    return c * 9 / 5 + 32
 
 
 def add_strings(x, y):
     """x and y are numbers typed as text. Return their sum as an int.
     add_strings('12', '30') -> 42   (type conversion!)"""
-    return None  # TODO
+    return int(x) + int(y)
 
 
 def is_even(n):
     """Return True if n is even, else False. Use the % operator."""
-    return None  # TODO
+    return n % 2 == 0
 
 
 def circle_area(r):
     """Return pi * r squared, rounded to 2 decimals. Use math.pi.
     circle_area(2) -> 12.57"""
-    return None  # TODO
+    return round(math.pi * r ** 2, 2)
 
 
 if __name__ == "__main__":
